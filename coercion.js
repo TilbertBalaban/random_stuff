@@ -24,8 +24,8 @@ false - null, NaN, undefined, 0, ''
 */
 
 /* 
- +        якщо один з операндів - строка (або перетворюється в примітив строки) - результат буде строка, в іншому випадку - число
- - * /    результат число
+ +        якщо один з операндів - строка (або перетворюється в примітив строки) - результат буде строка, 
+          в іншому випадку - результат число
 */
 
 /*
@@ -89,7 +89,7 @@ const user = {
 // console.log(0 == {}) // false (({}).toString() is '[object Object]' --> 0 == '[object Object]' --> 0 == Number('[object Object]') --> 0 == NaN)
 // console.log(0 == null) // false, null == null and null == undefined
 
-// [] + null + 1  
+// [] + null + 1
 // [] + null --> '' + null --> 'null'
 // 'null' + 1 --> 'null1'
 
@@ -103,7 +103,6 @@ const user = {
 // !+[]+[]+![] --> (!+[])+[]+(![]) --> (!0)+[]+(![]) --> true + [] + false
 // true + [] --> true + '' --> 'true'
 // 'true' + false --> 'truefalse
-
 
 // 4 - "5" + 0xf - "1e1"
 // 4 - '5' --> -1

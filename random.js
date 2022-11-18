@@ -44,3 +44,13 @@ const members1 = [person1];
 person1 = null;
 
 console.log(members1); // [{ name: 'Lydia' }].. if person1.name = 'test' --> [{ name: 'test' }]
+
+
+let name = 'Lydia';
+
+function getName() {
+  console.log(name);
+  let name = 'Sarah';
+}
+
+getName();

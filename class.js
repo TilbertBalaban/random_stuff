@@ -36,6 +36,9 @@ class Bar extends calculatorMixin(Foo) { }
 // private fields
 
 class Rectangle {
+  #height;
+  #width;
+
   constructor(height, width) {
     this.#height = height;
     this.#width = width;

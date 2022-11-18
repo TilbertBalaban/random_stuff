@@ -1,0 +1,33 @@
+MV*
+
+MVC, MVVM, MVP
+
+split business's logic and interface
+
+MVC
+
+1. V (view)       -- interface (user's graphic interface) 
+2. C (controller) -- control (between UI and logic, prepare data for the view/model)
+3. M (model)      -- business's logic (useful actions for your application, ex: registration, add product, save address etc)
+
+ex. for the client-server
+1. get request on the server
+2. controller receives get request
+3. controller communicates with model
+4. model returns data
+5. controller receives data and send it to the view
+6. view creates layout with data and send it to the controller
+7. controller sends data to the user
+
+
+MVVM 
+
+1. view
+2. viewmodel (instead of controller)
+3. model
+
+1. user changes the data in view (uses the input)
+2. we update (sync) data on view and viewmodel
+3. viewmodel sends data to model
+4. model sends result to the viewmodel
+5. because of the sync we update view
